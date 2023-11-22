@@ -8,25 +8,37 @@
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            margin: 20px;
+            margin: 0;
+            overflow: hidden;
+            animation: gradientAnimation 15s infinite alternate-reverse;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+
+        .header {
+            background: linear-gradient(to right, #4e54c8, #8f94fb);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
         }
 
         h1, h2 {
             color: #333;
         }
 
-        .header {
-            background-color: #f2f2f2;
-            padding: 20px;
-            text-align: center;
-        }
-
         .contact {
-            margin-bottom: 20px;
+            margin: 20px;
         }
 
         .education, .experience {
-            margin-bottom: 30px;
+            margin: 30px;
         }
     </style>
 </head>
