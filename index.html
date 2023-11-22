@@ -10,7 +10,14 @@
             line-height: 1.6;
             margin: 0;
             overflow: hidden;
-            animation: gradientAnimation 15s infinite alternate-reverse;
+        }
+
+        .header {
+            background: linear-gradient(to right, #4e54c8, #8f94fb);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            animation: gradientAnimation 10s infinite alternate-reverse;
         }
 
         @keyframes gradientAnimation {
@@ -20,13 +27,6 @@
             100% {
                 background-position: 100% 50%;
             }
-        }
-
-        .header {
-            background: linear-gradient(to right, #4e54c8, #8f94fb);
-            color: #fff;
-            padding: 20px;
-            text-align: center;
         }
 
         h1, h2 {
@@ -45,7 +45,7 @@
 <body>
 
     <div class="header">
-        <h1>Max Cauwenberghs</h1>
+        <h1>Voornaam Achternaam</h1>
         <p>Curriculum Vitae</p>
     </div>
 
@@ -76,3 +76,4 @@
 
 </body>
 </html>
+
